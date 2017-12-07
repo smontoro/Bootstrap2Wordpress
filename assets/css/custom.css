@@ -37,6 +37,14 @@ h4 {
 	font-size: 16px;
 }
 
+p {
+	margin: 0 0 15px;
+}
+
+p.lead {
+	font-weight: normal;
+}
+
 .btn {
 	font-weight: bold;
 }
@@ -179,6 +187,10 @@ blockquote:before {
 
 /* ==== LAYOUT ==== */
 
+.row + .row {
+	margin-top: 20px;
+}
+
 section {
 	padding: 80px 0;
 }
@@ -197,6 +209,32 @@ section h3 {
 	font-weight: bold;
 }
 
+#primary {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.feature-image {
+	display: table;
+	width: 100%;
+}
+
+.feature-image-default {
+	background: url('../img/stuff-feature.jpg') no-repeat;
+	background-size: cover;
+}
+
+.feature-image-default-alt {
+	background: url('../img/hipster-stuff.jpg') no-repeat;
+	background-size: cover;
+}
+
+.feature-image h1{
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	text-align: center;
+}
 
 #optin {
 	background: #3e4249;
@@ -326,6 +364,112 @@ footer li.signup-link a:hover {
 	font-weight: bold;
 }
 
+/* ======BLOG STYLES======== */
+
+.post, .widget {
+	position: relative;
+	border: solid 1px #ddd;
+	background: white;
+	margin: 0 0 40px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.post header,
+.post .post-excerpt {
+	padding: 20px;
+}
+
+.post header h3,
+.post header h1 {
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: solid 1px #ddd;
+}
+
+.post header h1 {
+	font-size: 24px;
+}
+
+.post-image {
+	height: auto;
+}
+
+.post-details {
+	font-size: 12px;
+	width: 90%;
+}
+.post-details i.fa {
+	padding-left: 10px;
+}
+
+.post-details i.fa:first-child {
+	padding: 0;
+}
+
+/* === COMMENTS  === */
+.post-comments-badge {
+	height:70px;
+	width: 70px;
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	border: none;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	background: #79B044;
+	text-align: center;
+	display: table;
+}
+
+.post-comments-badge a {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.post-comments-badge i.fa {
+	display: block;
+	font-size: 15px;
+	padding: 0;
+	margin-bottom: 4px;
+}
+
+.post-comments-badge:hover {
+	background-color: #8bc653;
+}
+
+/* === WIDGETS === */
+.widget {
+	padding: 20px;
+}
+
+.widget h4 {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: solid 1px #ddd;
+}
+
+.widget ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget ul li{
+	margin: 0 0 5px;
+	display: list-item;
+}
+
+.widget ul li:hover {
+	position: relative;
+	left: 1px;
+}
+
 /* ==== CUSTOM ICON SPRITES ==== */
 
 i.ci {
@@ -354,6 +498,63 @@ i.ci {
 	background-position: -200px 0;
 }
 
+/* ========FORMS======*/
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border:1px solid #ccc;
+	-webkit-border-radius:3px;
+	-moz-border-radius: 3px;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 12px;
+	}
+
+/* ======= MEDIA QUERIES ====== */
+
+@media screen and ( max-width : 991px ) {
+	#instructor .container {
+		background: rgba(255,255,255,0.8);
+	}
+}
+
+@media screen and ( max-width: 768px) {
+	.logo {
+		width: 50%;
+	}
+
+	#option p {
+		margin: 0 0 10px;
+	}
+
+	#featurette iframe {
+		height: 240px
+	}
+}
+
+@media screen and ( max-width:568px) {
+	#instructor .num {
+		height: 100px;
+		width: 100px;
+		font-size: 22px;
+	}
+	#instructor .num span {
+		font-size: 16px;
+	}
+}
 
 
 
