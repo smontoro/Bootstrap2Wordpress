@@ -364,6 +364,7 @@ footer li.signup-link a:hover {
 	font-weight: bold;
 }
 
+
 /* ======BLOG STYLES======== */
 
 .post, .widget {
@@ -386,11 +387,19 @@ footer li.signup-link a:hover {
 .post header h1 {
 	margin: 0 0 15px;
 	padding: 0 0 15px;
-	border-bottom: solid 1px #ddd;
+	border-bottom: solid 1px #ddd:;
+}
+
+.post header h3 a {
+	color: #DD5638;
 }
 
 .post header h1 {
 	font-size: 24px;
+}
+
+.post a {
+	color: #DD5638;
 }
 
 .post-image {
@@ -407,6 +416,10 @@ footer li.signup-link a:hover {
 
 .post-details i.fa:first-child {
 	padding: 0;
+}
+
+.widget a {
+	color: #DD5638;
 }
 
 /* === COMMENTS  === */
