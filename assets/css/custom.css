@@ -493,6 +493,7 @@ footer li.signup-link a:hover {
 	border-top: solid 1px #eee;
 }
 
+
 /* === RESOURCES === */
 
 .resource {
@@ -584,6 +585,13 @@ textarea {
 	width: 100%;
 	padding: 6px 12px;
 	}
+
+input[type="submit"] {
+	font-weight: bold;
+	background: #666;
+}
+
+
 
 /* ======= MEDIA QUERIES ====== */
 
